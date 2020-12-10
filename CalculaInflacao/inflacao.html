@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
             document.write("<br>");
 
             const now = new Date(); // Data de hoje
-            const past = new Date(prompt("digite a data do primeiro preço (aaa/mm/dd):")); // Outra data no passado
+            const past = new Date(prompt("digite a data do primeiro preço (aaaa/mm/dd):")); // Outra data no passado
             const diff = Math.abs(now.getTime() - past.getTime()); // Subtrai uma data pela outra
             const days = Math.ceil((diff / (1000 * 60 * 60 * 24)) - 1 ); // Divide o total pelo total de milisegundos correspondentes a 1 dia. (1000 milisegundos = 1 segundo).
 
@@ -25,7 +25,7 @@
             var inflacaoMedia = inflacao / days;
             // Mostra a diferença em dias
 
-            document.write('Entre 07/07/2014 até agora já se passaram ' + days + ' dias. <br> A inflação média dos dia(s): '+inflacaoMedia);
+            document.write('Entre ' + now + ' até agora já se passaram ' + days + ' dias. <br> A inflação média dos dia(s): '+inflacaoMedia);
             document.write("%");
         </script>
 
