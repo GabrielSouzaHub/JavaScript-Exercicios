@@ -1,0 +1,15 @@
+<script>
+    var pizzaCusto=prompt("Insira o custo de produção da pizza");
+    var pizzaValor=prompt("Insira o valor que a pizza é vendida");
+    var pizzaNome=prompt("Insira o nome da pizza");
+    function imposto(pizzaValor)
+    {
+        return imp=(pizzaValor*8.9)/100
+    }
+    var imp=imposto(pizzaValor)
+    function lucro(pizzaCusto, pizzaValor, imp)
+    {
+        return (pizzaValor-pizzaCusto)-imp
+    }
+    document.write('Para a pizza '+pizzaNome+' o lucro líquido é de R$ '+lucro(pizzaCusto, pizzaValor, imp)+' e o imposto é de R$ '+imposto(pizzaValor))
+</script>
