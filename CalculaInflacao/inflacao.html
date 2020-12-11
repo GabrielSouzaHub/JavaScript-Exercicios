@@ -11,7 +11,10 @@
             var precoAtual = prompt("digite o preço atual:");
             var diferenca = precoInicial - precoAtual;
             var inflacao = (diferenca * 100) / precoInicial;
-
+            if (inflacao<0)
+            {
+                inflacao=inflacao*-1
+            }
 
             document.write("A diferença entre os preços é de "+inflacao+"%")
             document.write("<br>");
@@ -25,8 +28,7 @@
             var inflacaoMedia = inflacao / days;
             // Mostra a diferença em dias
 
-            document.write('Entre ' + now + ' até agora já se passaram ' + days + ' dias. <br> A inflação média dos dia(s): '+inflacaoMedia);
-            document.write("%");
+            document.write('Entre ' + past + ' e a data de hoje, já se passaram ' + days + ' dias. <br> A inflação média dos dia(s) é: '+inflacaoMedia+'%');
         </script>
 
     </body>
