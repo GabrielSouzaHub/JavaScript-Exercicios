@@ -1,0 +1,24 @@
+<script>
+    var palavra1=prompt("Para a concatenação de duas palavras digite a primeira palavra")
+    var palavra2=prompt("Digite a segunda palavra")
+    function concat(palavra1, palavra2)
+    {
+        return palavra1+" "+palavra2
+    }
+    document.write('Suas palavras unidas são: '+concat(palavra1, palavra2)+'<br>')
+
+    var nome=prompt("Digite o seu nome")
+    function saudac(nome)
+    {
+        return "Olá "+nome+" Tudo bem "+nome+"?"
+    }
+    document.write(saudac(nome)+'<br>')
+
+    var numero=prompt("Digite um número para saber o resto da divisão por 9")
+    function rest(numero)
+    {
+        return numero%9
+    }
+    document.write('O resto de '+numero+' dividido por 9 é: '+rest(numero))
+
+</script>
