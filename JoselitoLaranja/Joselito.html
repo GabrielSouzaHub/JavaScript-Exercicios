@@ -1,0 +1,15 @@
+<script>
+    var qtdLaranja=prompt("Insira quantas laranjas possui Joselito");
+    var qtdVizinho=prompt("Insira quantos vizinhos possui Joselito");
+
+        function divisao(qtdLaranja, qtdVizinho)
+        {
+            return Math.trunc(qtdLaranja/qtdVizinho)
+        }
+        function sobra(qtdLaranja, qtdVizinho)
+        {
+            return qtdLaranja%qtdVizinho
+        }
+
+    prompt('Serão distribuídas '+divisao(qtdLaranja, qtdVizinho)+' laranja(s) para cada vizinho Joselito e a sobra será de '+sobra(qtdLaranja, qtdVizinho)+' laranja(s)')
+</script>
