@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var qtd = parseInt(prompt("Quantos números você quer que leia?"));
+        var maior = 0;
+        var maior2 = 0;
+        var temporario = null;
+        if (isNaN(qtd)){
+            alert("Apenas números são suportados");
+        }
+        for (qtd = qtd; qtd > 0; qtd--){
+            var numero = parseInt(prompt("Insira um valor"));
+
+            if (numero>maior){
+                temporario = maior;
+                maior = numero;
+                console.log(maior);
+                if (temporario>maior2){
+                    maior2 = temporario;
+                }
+            }
+
+            else if (numero<maior && numero>maior2){
+                maior2 = numero;
+                console.log(maior2);
+            }        
+        }
+        console.log("Maior número: "+maior);
+        console.log("Segundo maior número: "+maior2);
+        console.log("Multiplicação dos dois maiores: "+maior*maior2);
+        
+        
+    </script>
+</body>
+</html>

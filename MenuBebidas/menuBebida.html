@@ -1,0 +1,26 @@
+<script>
+    function menu(escolha)
+    {
+        if (escolha==null){
+        console.log('Lista de itens: \n1-Refrigerante \n2-Suco \n3-Água');
+        }
+        switch (escolha) {
+            case '1':
+            console.log('Pedido de número 1: Refrigerante')
+            break;
+            case '2':
+            console.log('Pedido de número 2: Suco')
+            break;
+            case '3':
+            console.log('Pedido de número 3: Água')
+            break;
+        }
+    }
+
+    menu();
+
+    var escolha=prompt("Escolha uma bebida");
+
+    menu(escolha);
+
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisores</title>
+</head>
+<body>
+    <script>
+        var numeroUsu = parseInt(prompt("Insira um número inteiro"));
+        if (isNaN(numeroUsu)){
+            alert("Apenas números são suportados");
+        }
+        
+        for (var cont = 0; cont <= (numeroUsu/2); cont++){
+            if (numeroUsu%cont==0){
+                console.log(cont);
+            }
+        }
+        console.log(numeroUsu);
+    </script>
+</body>
+</html>

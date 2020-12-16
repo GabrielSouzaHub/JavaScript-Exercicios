@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão</title>
+</head>
+<body>
+    <button type="button" onclick="botao(nomes)"></button>
+    <script>
+        var nomes = ["Ana", "Nicolas", "Michaelle", "Gabriel", "Thales"];
+
+        function botao(nomes){
+            for (var i = 0; i < 5; i++){
+                console.log(nomes[i]);
+                document.write("<button>+nomes[i]+</button>"); 
+            }
+            console.log(nomes[i]);
+        }
+    </script>
+    
+</body>
+</html>
