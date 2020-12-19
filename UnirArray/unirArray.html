@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    
+    var cont1 = parseInt(prompt("Digite quantos valores deseja inserir no 1 array"));
+    var array1 = [];
+    var cont2 = parseInt(prompt("Digite quantos valores deseja inserir no 2 array"));
+    var array2 = [];
+
+    for(cont1 = cont1; cont1 > 0; cont1--){
+        array1.push(parseInt(prompt("Digite o valor da 1 lista")));
+    }
+
+    for(cont2 = cont2; cont2 > 0; cont2--){
+        array2.push(parseInt(prompt("Digite o valor da 2 lista")));
+    }
+
+    var array3 = array1.concat(array2);
+    console.log(array3);
+
+</script>

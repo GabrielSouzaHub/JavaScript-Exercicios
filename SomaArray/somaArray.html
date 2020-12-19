@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+
+    var cont = parseInt(prompt("Digite quantos números você quer somar(números negativos não serão somados)"));
+    var numeros = [];
+    var soma = 0;
+
+    for(cont = cont; cont > 0; cont--){
+        numeros.push(parseInt(prompt("Digite o valor")));
+    }
+    for (cont = 0; cont < numeros.length; cont++){
+        if(numeros[cont] > 0){
+            soma = soma + numeros[cont];
+            }
+    }
+    console.log("A soma dos valores é: "+soma);
+</script>

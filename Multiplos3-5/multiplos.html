@@ -1,0 +1,17 @@
+<meta charset="UTF8">
+<script>
+
+    var numero = parseInt(prompt("Digite o número para verificar os múltiplos de 3 e 5 antes dele"));
+    
+    if(numero > 5){
+        for(i = 3; i <= numero; i++){
+            if(i%3==0 || i%5==0){
+                console.log(i);
+            }
+        }
+    }
+    else{
+        alert("Reinice a página, seu número deve ser maior que 5");
+    }
+    
+</script>
