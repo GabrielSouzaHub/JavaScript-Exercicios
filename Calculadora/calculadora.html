@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+
+        function calculate(numero1,numero2,operacao){
+            if(operacao=="+")
+            return alert(numero1+numero2);
+            else if(operacao=="-")
+            return alert(numero1-numero2);
+            else if(operacao=="*")
+            return alert(numero1*numero2);
+            else if(operacao=="/"){
+                if(numero2==0){
+                    return alert(null);
+                }
+                else{
+                return alert(numero1/numero2);
+                }
+            }
+            else{
+                return alert(null);
+            }
+            
+        }
+        
+        var numero1 = parseInt(prompt("Digite o primeiro valor"));
+        var numero2 = parseInt(prompt("Digite o segundo valor"));
+        var operacao = prompt("Digite o \'+\' para soma\nO \'-\' para subtração\nO \'*\' para multiplicação\nOu \'/\' para divisão");
+        calculate(numero1,numero2,operacao);
+
+    </script>
+</body>
+</html>
